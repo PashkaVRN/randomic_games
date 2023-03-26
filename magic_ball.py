@@ -1,4 +1,5 @@
 import random
+from time import *
 
 def magic_ball():
     """Магический шар даёт ответы на ваши вопросы."""
@@ -12,6 +13,10 @@ def magic_ball():
         "По моим данным - нет", "Перспективы не очень хорошие", "Весьма сомнительно"
         ]
     while True:
+        print('Привет Мир, я магический шар, и я знаю ответ на любой твой вопрос.')
+        sleep(1)
+        name = input('Как тебя зовут?')
+        print('Привет',  name)
         input("Задай вопрос: ")
         num = random.randint(0, 19)
         print(answer[num])
